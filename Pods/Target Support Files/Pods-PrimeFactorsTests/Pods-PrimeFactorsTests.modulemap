@@ -1,0 +1,6 @@
+framework module Pods_PrimeFactorsTests {
+  umbrella header "Pods-PrimeFactorsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C669F0A761385B2EF7DEC43 /* Pods_PrimeFactorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C183E14982C8D2C66436687E /* Pods_PrimeFactorsTests.framework */; };
+		6EC606CA1D10D46900F293CE /* FooSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC606C91D10D46900F293CE /* FooSpec.swift */; };
 		6EFB84BF1D10D318008CDCD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB84BE1D10D318008CDCD9 /* AppDelegate.swift */; };
 		6EFB84C11D10D318008CDCD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB84C01D10D318008CDCD9 /* ViewController.swift */; };
 		6EFB84C41D10D318008CDCD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB84C21D10D318008CDCD9 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		339B95AD64EED1255FBB3268 /* Pods-PrimeFactorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeFactorsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EC606C91D10D46900F293CE /* FooSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooSpec.swift; sourceTree = "<group>"; };
 		6EFB84BB1D10D318008CDCD9 /* PrimeFactors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeFactors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB84BE1D10D318008CDCD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EFB84C01D10D318008CDCD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		6EFB84CF1D10D319008CDCD9 /* PrimeFactorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeFactorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB84D31D10D319008CDCD9 /* PrimeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTests.swift; sourceTree = "<group>"; };
 		6EFB84D51D10D319008CDCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		980B93EDA92537B64E07477D /* Pods-PrimeFactorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeFactorsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C183E14982C8D2C66436687E /* Pods_PrimeFactorsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimeFactorsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +56,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C669F0A761385B2EF7DEC43 /* Pods_PrimeFactorsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EE20968C0747E1372EB386E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				980B93EDA92537B64E07477D /* Pods-PrimeFactorsTests.debug.xcconfig */,
+				339B95AD64EED1255FBB3268 /* Pods-PrimeFactorsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6EFB84B21D10D318008CDCD9 = {
 			isa = PBXGroup;
 			children = (
 				6EFB84BD1D10D318008CDCD9 /* PrimeFactors */,
 				6EFB84D21D10D319008CDCD9 /* PrimeFactorsTests */,
 				6EFB84BC1D10D318008CDCD9 /* Products */,
+				5EE20968C0747E1372EB386E /* Pods */,
+				70367A842006399F161FE93D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +110,17 @@
 			children = (
 				6EFB84D31D10D319008CDCD9 /* PrimeFactorsTests.swift */,
 				6EFB84D51D10D319008CDCD9 /* Info.plist */,
+				6EC606C91D10D46900F293CE /* FooSpec.swift */,
 			);
 			path = PrimeFactorsTests;
+			sourceTree = "<group>";
+		};
+		70367A842006399F161FE93D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C183E14982C8D2C66436687E /* Pods_PrimeFactorsTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFB84DB1D10D319008CDCD9 /* Build configuration list for PBXNativeTarget "PrimeFactorsTests" */;
 			buildPhases = (
+				64D93F3CC6B3315C5B6C53E0 /* [CP] Check Pods Manifest.lock */,
 				6EFB84CB1D10D319008CDCD9 /* Sources */,
 				6EFB84CC1D10D319008CDCD9 /* Frameworks */,
 				6EFB84CD1D10D319008CDCD9 /* Resources */,
+				1B4D5096EFBEEDFB4C2238A9 /* [CP] Embed Pods Frameworks */,
+				687F855505DC520BF95BD0AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +224,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B4D5096EFBEEDFB4C2238A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64D93F3CC6B3315C5B6C53E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		687F855505DC520BF95BD0AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EFB84B71D10D318008CDCD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EFB84D41D10D319008CDCD9 /* PrimeFactorsTests.swift in Sources */,
+				6EC606CA1D10D46900F293CE /* FooSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +430,7 @@
 		};
 		6EFB84DC1D10D319008CDCD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980B93EDA92537B64E07477D /* Pods-PrimeFactorsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PrimeFactorsTests/Info.plist;
@@ -363,6 +443,7 @@
 		};
 		6EFB84DD1D10D319008CDCD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339B95AD64EED1255FBB3268 /* Pods-PrimeFactorsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PrimeFactorsTests/Info.plist;
@@ -392,6 +473,7 @@
 				6EFB84DA1D10D319008CDCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EFB84DB1D10D319008CDCD9 /* Build configuration list for PBXNativeTarget "PrimeFactorsTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +482,7 @@
 				6EFB84DD1D10D319008CDCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
