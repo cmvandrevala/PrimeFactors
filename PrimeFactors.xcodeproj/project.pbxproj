@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3C669F0A761385B2EF7DEC43 /* Pods_PrimeFactorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C183E14982C8D2C66436687E /* Pods_PrimeFactorsTests.framework */; };
-		6EC606CA1D10D46900F293CE /* FooSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC606C91D10D46900F293CE /* FooSpec.swift */; };
+		6E5F60931D1230E000590E71 /* PrimeFactorsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F60921D1230E000590E71 /* PrimeFactorsBrain.swift */; };
+		6E5F60971D12332100590E71 /* PrimeFactorsBrainSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F60961D12332100590E71 /* PrimeFactorsBrainSpec.swift */; };
 		6EFB84BF1D10D318008CDCD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB84BE1D10D318008CDCD9 /* AppDelegate.swift */; };
 		6EFB84C11D10D318008CDCD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB84C01D10D318008CDCD9 /* ViewController.swift */; };
 		6EFB84C41D10D318008CDCD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB84C21D10D318008CDCD9 /* Main.storyboard */; };
 		6EFB84C61D10D318008CDCD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB84C51D10D318008CDCD9 /* Assets.xcassets */; };
 		6EFB84C91D10D318008CDCD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB84C71D10D318008CDCD9 /* LaunchScreen.storyboard */; };
-		6EFB84D41D10D319008CDCD9 /* PrimeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB84D31D10D319008CDCD9 /* PrimeFactorsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,8 @@
 
 /* Begin PBXFileReference section */
 		339B95AD64EED1255FBB3268 /* Pods-PrimeFactorsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeFactorsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests.release.xcconfig"; sourceTree = "<group>"; };
-		6EC606C91D10D46900F293CE /* FooSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooSpec.swift; sourceTree = "<group>"; };
+		6E5F60921D1230E000590E71 /* PrimeFactorsBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFactorsBrain.swift; sourceTree = "<group>"; };
+		6E5F60961D12332100590E71 /* PrimeFactorsBrainSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFactorsBrainSpec.swift; sourceTree = "<group>"; };
 		6EFB84BB1D10D318008CDCD9 /* PrimeFactors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeFactors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB84BE1D10D318008CDCD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EFB84C01D10D318008CDCD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		6EFB84C81D10D318008CDCD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EFB84CA1D10D318008CDCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EFB84CF1D10D319008CDCD9 /* PrimeFactorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeFactorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EFB84D31D10D319008CDCD9 /* PrimeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTests.swift; sourceTree = "<group>"; };
 		6EFB84D51D10D319008CDCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		980B93EDA92537B64E07477D /* Pods-PrimeFactorsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimeFactorsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrimeFactorsTests/Pods-PrimeFactorsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C183E14982C8D2C66436687E /* Pods_PrimeFactorsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimeFactorsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +101,7 @@
 				6EFB84C51D10D318008CDCD9 /* Assets.xcassets */,
 				6EFB84C71D10D318008CDCD9 /* LaunchScreen.storyboard */,
 				6EFB84CA1D10D318008CDCD9 /* Info.plist */,
+				6E5F60921D1230E000590E71 /* PrimeFactorsBrain.swift */,
 			);
 			path = PrimeFactors;
 			sourceTree = "<group>";
@@ -108,9 +109,8 @@
 		6EFB84D21D10D319008CDCD9 /* PrimeFactorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				6EFB84D31D10D319008CDCD9 /* PrimeFactorsTests.swift */,
 				6EFB84D51D10D319008CDCD9 /* Info.plist */,
-				6EC606C91D10D46900F293CE /* FooSpec.swift */,
+				6E5F60961D12332100590E71 /* PrimeFactorsBrainSpec.swift */,
 			);
 			path = PrimeFactorsTests;
 			sourceTree = "<group>";
@@ -277,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5F60931D1230E000590E71 /* PrimeFactorsBrain.swift in Sources */,
 				6EFB84C11D10D318008CDCD9 /* ViewController.swift in Sources */,
 				6EFB84BF1D10D318008CDCD9 /* AppDelegate.swift in Sources */,
 			);
@@ -286,8 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EFB84D41D10D319008CDCD9 /* PrimeFactorsTests.swift in Sources */,
-				6EC606CA1D10D46900F293CE /* FooSpec.swift in Sources */,
+				6E5F60971D12332100590E71 /* PrimeFactorsBrainSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
