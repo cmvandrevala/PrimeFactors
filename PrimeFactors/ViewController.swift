@@ -25,12 +25,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func calculatePrimes(sender: AnyObject) {
         let number = Int(textField.text!)
-        if(number != nil) {
+        if(number == nil) {
+            display.text = "No primes could be generated :("
+        } else {
             let factors = PrimeFactorsBrain.factors(number!)
             let factors_strings = factors.flatMap { String($0) }
             display.text = factors_strings.joinWithSeparator(",")
         }
     }
-
 }
 
