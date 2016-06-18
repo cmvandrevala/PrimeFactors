@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var display: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textField.delegate = self //set delegate to textfile
+    }
+    
+    func textFieldShouldReturn(txtField: UITextField) -> Bool {   //delegate method
+        txtField.resignFirstResponder()
+        return true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func calculatePrimes(sender: AnyObject) {
+        let number = Int(textField.text!)
+        if(number != nil) {
+            let factors = PrimeFactorsBrain.factors(number!)
+            let factors_strings = factors.flatMap { String($0) }
+            display.text = factors_strings.joinWithSeparator(",")
+        }
     }
-
 
 }
 
