@@ -28,10 +28,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if(number == nil) {
             display.text = "No primes could be generated :("
         } else {
-            let factors = PrimeFactorsBrain.factors(number!)
-            let factors_strings = factors.flatMap { String($0) }
-            display.text = factors_strings.joinWithSeparator(",")
+            let url = NSURL(string: "https://damp-wave-44850.herokuapp.com?number=\(number!)")
+            let request = NSURLRequest(URL: url!)
+            let operationQueue = NSOperationQueue.currentQueue()!
+            NSURLConnection.sendAsynchronousRequest(request, queue: operationQueue) { response, maybeData, error in
+                if let data = maybeData {
+                    let theString = NSString(data: data, encoding: NSASCIIStringEncoding)
+                    self.display.text = theString! as String
+                } else {
+                    print(error!.localizedDescription)
+                }
+            }
         }
     }
+
 }
 
