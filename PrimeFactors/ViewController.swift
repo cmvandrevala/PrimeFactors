@@ -30,15 +30,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         } else {
             let url = NSURL(string: "https://damp-wave-44850.herokuapp.com?number=\(number!)")
             let request = NSURLRequest(URL: url!)
-            let operationQueue = NSOperationQueue.currentQueue()!
-            NSURLConnection.sendAsynchronousRequest(request, queue: operationQueue) { response, maybeData, error in
+            let session = NSURLSession.sharedSession()
+            let task = session.dataTaskWithRequest(request) {
+                maybeData, response, error -> Void in
                 if let data = maybeData {
                     let theString = NSString(data: data, encoding: NSASCIIStringEncoding)
-                    self.display.text = theString! as String
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.display.text = theString! as String
+                    })
                 } else {
                     print(error!.localizedDescription)
                 }
             }
+            task.resume()
         }
     }
 
